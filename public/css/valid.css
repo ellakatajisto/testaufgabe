@@ -1,0 +1,78 @@
+#maincontainer{
+    width: 470px ;
+    background-color: #f3e4d6;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    padding: 1rem;
+}
+
+/* make the media full screen on small mobile devices  */
+@media (max-width: 470.0px) {
+    /*By default, containers are only full-width on xs screens. 
+    This makes them full-width om sm screens as well*/
+    .container {
+      margin-left: 0;
+      margin-right: 0;
+      max-width: 90% !important;
+    }
+  }
+
+.h1{
+    text-align: center;
+    font-family: 'Lexend Mega', sans-serif;
+    color: #4f525e;
+    margin-top: 2rem; 
+    font-size: 2rem !important;
+}
+
+body{
+    background-color: #c0caad !important;
+    font-weight: lighter !important;
+    font-family: 'Inconsolata', monospace !important;
+    color: #4f525e !important;
+}
+
+/* BUTTONS */
+.btn-outline-primary:hover{
+  background-color: #ffffff !important;
+}
+
+.btn-outline-primary{
+ color: #696d7d !important;
+ border-color: #696d7d !important;
+ background-color: #fdf5ee !important;
+}
+
+.form-label{
+    text-transform: uppercase;
+    margin-bottom: 0 !important;
+    padding-top: 0.5rem !important;
+    padding-right: 0 !important;
+}
+
+/* form input field */
+.form-control{
+    background-color: #dbdbdb! important;
+    border: #dbdbdb !important;
+    margin-left: 0 !important;
+}
+
+/* select dropdown */
+.custom-select {
+    background-color: #dbdbdb !important;
+    border: #dbdbdb !important;
+    color: #495057 !important;
+}
+
+/* disable the google autofill background color for form input fields */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px #dbdbdb inset !important;
+}
+
+footer{
+    background-color: #495057 !important;
+    color: #dbdbdb !important;
+}

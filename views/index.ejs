@@ -1,0 +1,116 @@
+<div id="index-page">
+  <h1 class="h1">Get in touch with us!</h1>
+  <div class="container" id="maincontainer">
+    <form method="POST" action="/saveAndSend" class="needs-validation" novalidate>
+
+      <!-- 1st row -->
+      <div class="row mb-3">
+        <div class="col-sm-3 pr-0">
+          <label for="Anrede" class="form-label"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+              fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+              <path
+                d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5L13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175l-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z" />
+            </svg> Anrede:</label>
+        </div>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="anrede" name="anrede" required="true" placeholder="Please enter your first name">
+          <div class="valid-feedback">Looks good!</div>
+          <div class="invalid-feedback">We want to know how to greet you!</div>
+        </div>
+      </div>
+
+      <!-- 2nd row -->
+      <div class="row mb-3">
+        <div class="col-sm-3 pr-0">
+          <label for="Name" class="form-label"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+              fill="currentColor" class="bi bi-person-check" viewBox="0 0 16 16">
+              <path
+                d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+              <path fill-rule="evenodd"
+                d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+            </svg> Name:</label>
+        </div>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="name" name="name" required="true" placeholder="Please enter your last name">
+          <div class="valid-feedback">Looks good!</div>
+          <div class="invalid-feedback">Please fill in your name.</div>
+        </div>
+      </div>
+
+      <!-- 3rd row -->
+      <div class="row mb-3">
+        <div class="col-sm-3 pr-0">
+          <label for="Email" class="form-label"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+              fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+              <path
+                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
+            </svg> Email:</label>
+        </div>
+        <div class="col-sm-9">
+          <input type="email" class="form-control" id="email" required="true" name="email" placeholder="ella@gmail.com">
+          <div class="valid-feedback">Looks good!</div>
+          <div class="invalid-feedback">Please provide a valid email address.</div>
+        </div>
+      </div>
+
+      <!-- 4th row: select bar with the hidden text field -->
+      <div class="row">
+        <div class="col-sm-3 mb-3 pr-0">
+          <label for="Select" class="form-label"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+              fill="currentColor" class="bi bi-patch-question" viewBox="0 0 16 16">
+              <path
+                d="M8.05 9.6c.336 0 .504-.24.554-.627.04-.534.198-.815.847-1.26.673-.475 1.049-1.09 1.049-1.986 0-1.325-.92-2.227-2.262-2.227-1.02 0-1.792.492-2.1 1.29A1.71 1.71 0 0 0 6 5.48c0 .393.203.64.545.64.272 0 .455-.147.564-.51.158-.592.525-.915 1.074-.915.61 0 1.03.446 1.03 1.084 0 .563-.208.885-.822 1.325-.619.433-.926.914-.926 1.64v.111c0 .428.208.745.585.745z" />
+              <path
+                d="M10.273 2.513l-.921-.944.715-.698.622.637.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636a2.89 2.89 0 0 1 4.134 0l-.715.698a1.89 1.89 0 0 0-2.704 0l-.92.944-1.32-.016a1.89 1.89 0 0 0-1.911 1.912l.016 1.318-.944.921a1.89 1.89 0 0 0 0 2.704l.944.92-.016 1.32a1.89 1.89 0 0 0 1.912 1.911l1.318-.016.921.944a1.89 1.89 0 0 0 2.704 0l.92-.944 1.32.016a1.89 1.89 0 0 0 1.911-1.912l-.016-1.318.944-.921a1.89 1.89 0 0 0 0-2.704l-.944-.92.016-1.32a1.89 1.89 0 0 0-1.912-1.911l-1.318.016z" />
+              <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0z" />
+            </svg> Select:</label>
+        </div>
+        <div class="col-sm-9 mb-3">
+          <select class="custom-select" id="select" name="select" required="true"
+            onchange="if (this.value==2) {this.form['beschreibung'].style.display='block'} else {this.form['beschreibung'].style.display='none'};">
+            <option value="" disabled selected> Choose one! </option>
+            <option value="1">1. One</option>
+            <option value="2">2. I want to tell more!</option>
+            <option value="3">3. Three</option>
+          </select>
+          <div class="invalid-feedback">Please select one.</div>
+        </div>
+        <div class="mb-3 col-lg-12 col-lg-offset-6">
+          <textarea class="form-control" input type="text" name="beschreibung" id="beschreibung" rows="3"
+            style="display: none;" placeholder="Type here..."></textarea>
+        </div>
+      </div>
+
+      <!-- 5th row: checkbox -->
+      <div class="custom-control custom-checkbox mb-3">
+        <input type="checkbox" class="custom-control-input" id="agreed" name="agreed" required value="agreed">
+        <label class="custom-control-label" for="agreed">I agree with the privacy guidelines</label>
+        <div class="invalid-feedback">We need you to agree before submitting!</div>
+      </div>
+      <div>
+        <p> The information you submitted will be sent to you via email.</p>
+      </div>
+      <input type="submit" class="btn btn-outline-primary" value="Submit" />
+    </form>
+  </div>
+
+  <script>
+    // stop submission in case of invalid fields
+    // this method is from bootstrap documentation: https://getbootstrap.com/docs/4.0/components/forms/
+    (function () {
+      window.addEventListener('click', function () {
+        // get all forms i want to validate
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function (form) {
+          form.addEventListener('submit', function (event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+  </script>
